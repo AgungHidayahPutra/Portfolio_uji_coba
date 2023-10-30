@@ -1,0 +1,171 @@
+/* responsive */
+
+@media (max-width: 858px) {
+
+    .home {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* card */
+    
+    .card {
+      margin-top: 150px;
+      margin-bottom: 10;
+      position: relative;
+      width: 250px;
+      height: 300px;
+    }
+    
+    .card .back .link a {
+      font-size: 20px;
+    }
+    
+    .card .back h3 {
+      font-size: 20px;
+    }
+    
+    .card .back p {
+      font-size: 15px;
+    }
+  
+    /* deskripsi */
+    .greetings {
+      margin-top: 10px;
+      display: block;
+      font-size: 3rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    .description {
+      font-size: 1rem;
+    }
+  
+    .button a {
+      font-size: 0.5rem;
+    }
+  
+    .title-desc {
+      font-size: 25px;
+    }
+    
+    #text-animation, .text-animation {
+        font-size: 15px;
+    }
+    
+    .text-paragraph {
+        font-size: 10px;
+    }
+  
+    /* project individu */
+  
+    .card-project {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    
+    .desc-project {
+      font-size: 12px;
+    }
+    
+    .item-project {
+      padding: 15px;
+    }
+    
+    .icon {
+      margin-left: 30px;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px;
+    }
+    
+    .img-individu {
+      border: 1px solid black;
+      width: 200px;
+      border-radius: 10px;
+    }
+    
+    /* project team */
+  
+    
+    .img-team {
+      border: 1px solid black;
+      width: 200px;
+      border-radius: 10px;
+    }
+  
+    /* title */
+    .title {
+      font-size: 20px;
+    }
+  
+    /* skills dan tools */
+  
+  .all-item-skills,
+  .all-item-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .desc-skills,
+  .desc-tools {
+    font-size: 12px;
+    font-family: comic sans ms;
+    margin-bottom: 10px;
+  }
+  
+  .desc-tools-vsc {
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .item-skills,
+  .item-tools {
+    width: 100px;
+  }
+  
+  .item-tools {
+      margin-bottom: 10px;
+  }
+  
+  .img-skills,
+  .img-tools {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* pop-up */
+  
+  .pop-up {
+    display: none;
+  }
+  
+  /* contact */
+    
+  .all-item-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  
+  .item-contact {
+      width: 50px;
+      height: 45px;
+      padding: 0;
+  }
+  
+  .link-contact {
+      color: #06141e;
+      font-size: 20px;
+  }
+}

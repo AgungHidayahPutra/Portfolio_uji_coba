@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  background: var(--dark-blue);
+  box-shadow: var(--shadow-nav);
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+}
+
+label.logo {
+  color: var(--white);
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 80px;
+  letter-spacing: -1px;
+  font-weight: 800;
+  font-style: italic;
+  transition: 0.2s ease;
+  text-shadow: 3px 5px 20px #230622aa;
+  cursor: pointer;
+}
+
+nav ul {
+  float: right;
+  margin-right: 100px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 75px;
+}
+
+nav ul li .link-nav {
+    align-items: center ;
+    color: var(--white);
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 13px;
+}
+
+.link-nav:hover {
+  background: var(--blue);
+  transition: 0.5s;
+  color: black;
+}
+
+.checkbtn {
+  line-height: 80px;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  margin-right: 40px;
+  display: none;
+}
+
+.checkbtn i {
+  color: var(--white);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.checkbtn i:hover {
+  background: var(--blue);
+}
+
+#check-nav {
+  display: none;
+}
+
+/* dropdown */
+.nav-links .mobile-item {
+    display: none;
+}
+.nav-links .drop-menu {
+    position: absolute;
+    background: var(--dark-blue);
+    box-shadow: var(--shadow-nav);
+    border-radius: 20px;
+    width: 180px;
+    line-height: 45px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-links li:hover .drop-menu {
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-links li {
+    display: inline-block;
+    line-height: 75px;
+    position: relative;
+    text-align: center;    
+}
+
+.drop-menu li a {
+    text-align: center;
+    padding: 5px 15px;
+    display: flex;
+    color: var(--white);
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+
+.drop-menu li a:hover {
+    border-radius: 20px;
+    width: 180px;
+    background-color: var(--blue);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* responsove code */
+@media (max-width: 952px) {
+  /* table mode */
+  label.logo {
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 858px) {
+  /* mobile mode */
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--trans-blc);
+    top: 80px;
+    left: -100%;
+    padding-top: 80px;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active,
+  a:hover {
+    background: none;
+    color: var(--blue);
+    text-shadow: 0 10px 15px var(--blue);
+  }
+
+  #check-nav:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+  }
+
+  .nav-links .mobile-item {
+    display: none;
+}
+.nav-links .drop-menu {
+    display: none;
+}
+.nav-links li:hover .drop-menu {
+    display: none;
+}
+
+}

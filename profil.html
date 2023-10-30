@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profil.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Gabarito&family=Montserrat&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Agung Hidayah Putra</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check-nav" />
+        <label for="check-nav" class="checkbtn">
+          <i class="bx bx-menu"></i>
+        </label>
+        <a href=""><label class="logo">&copy; AHP</label></a>
+        <ul class="nav-links">
+          <li><a href="#home" class="link-nav">Home</a></li>
+          <li>
+            <a href="#project" class="link-nav">Project</a>
+            <input type="radio" id="showDrop">
+                        <label for="showDrop" class="mobile-item"></label>
+                        <ul class="drop-menu">
+                            <li><a href="#project-individu">Project Individu</a></li>
+                            <li><a href="#project-team">Project Team</a></li>
+                        </ul>
+          </li>
+          <li><a href="#skills-tools" class="link-nav">Skills</a></li>
+          <li><a href="#contact" class="link-nav">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="home" id="home">
+      <div class="row-card animate__animated animate__fadeInLeftBig" >
+        <div class="card">
+          <div class="face front">
+            <img src="img/Agung.jpg" alt="" />
+            <h3>Agung Hidayah Putra</h3>
+          </div>
+          <div class="face back">
+            <h3>Agung Hidayah Putra</h3>
+            <p>
+              Asal : Lubuklinggau <br>
+              Umur : 18 tahun <br>
+              Status : Mahasiswa <br>
+              Hobi : Olahraga <br>
+              Agama : Islam
+            </p>
+            <div class="link">
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="deskripsi animate__animated animate__fadeInRightBig" >
+        <div class="greetings">
+              <span>H</span>
+              <span>A</span>
+              <span>L</span>
+              <span>L</span>
+              <span>0</span>
+          </div>
+        <h2 class="title-desc">WELCOME TO MY WEBSITE 👋🏻</h2>
+        <h2 class="text-animation">I have some skills &rarr; <span id="text-animation"></span></h2>
+        <p class="text-paragraph">
+          &larr; Please see the card on the side for my brief profile
+        </p>
+      </div>
+    </div>
+
+    <div id="project">
+      <div class="project-individu" id="project-individu">
+        <div class="grid-project">
+          <h2 class="title">Project Individu</h2>
+          <div class="card-project">
+            <div class="desc-project">
+              <h2>Formulir</h2>
+            </div>
+            <div class="item-project">
+              <img src="img/biodata.png" alt="icon-biodata" class="icon" />
+              <img src="img/project1.png" alt="project1" class="img-individu" />
+              <img src="img/project2.png" alt="project2" class="img-individu" />
+            </div>
+          </div>
+          <div class="card-project">
+            <div class="desc-project">
+              <h2>Biodata</h2>
+            </div>
+            <div class="item-project">
+              <img src="img/form.png" alt="icon-biodata" class="icon" />
+              <img src="img/project3.png" alt="project3" class="img-individu" />
+              <img src="img/project4.png" alt="project4" class="img-individu" />
+            </div>
+          </div>
+          <div class="card-project">
+            <div class="desc-project">
+              <h2>Calculator</h2>
+            </div>
+            <div class="item-project">
+              <img src="img/calculator.png" alt="icon-calculator" class="icon" />
+              <img src="img/project5.png" alt="project5" class="img-individu" />
+            </div>
+          </div>
+          <div class="card-project">
+            <div class="desc-project">
+              <h2>Desain UI Aplikasi</h2>
+            </div>
+            <div class="item-project">
+              <img src="img/ui.png" alt="icon-Desain-UI" class="icon" />
+              <img src="img/project6.jpg" alt="project6" class="img-individu" />
+              <img src="img/project7.jpg" alt="project7" class="img-individu" />
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project-team" id="project-team">
+        <div class="grid-project">
+          <h2 class="title">Project Team</h2>
+          <div class="card-project">
+            <div class="desc-project">
+              <h2>UTS Perkuliahan</h2>
+            </div>
+            <div class="item-project">
+              <img src="img/project8.png" alt="project8" class="img-team" />
+              <img src="img/project9.png" alt="project9" class="img-team" />
+              <img src="img/project10.png" alt="project10" class="img-team" />
+            </div>
+          </div>
+          <div class="card-project">
+            <div class="desc-project">
+              <h2>Website BEM KM Fasilkom UNSRI</h2>
+            </div>
+            <div class="item-project">
+              <img src="img/project11.png" alt="project11" class="img-team" />
+              <img src="img/project12.png" alt="project12" class="img-team" />
+              <img src="img/project13.png" alt="project13" class="img-team" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-tools" id="skills-tools">
+      <div class="card-skills">
+        <div>
+          <h2 class="title">Skills</h2>
+        </div>
+        <div class="all-item-skills">
+          <div class="item-skills">
+            <h2 class="desc-skills">HTML</h2>
+            <img src="img/html.png" alt="html" class="img-skills" />
+          </div>
+          <div class="item-skills">
+            <h2 class="desc-skills">CSS</h2>
+            <img src="img/css.png" alt="css" class="img-skills" />
+          </div>
+          <div class="item-skills">
+            <h2 class="desc-skills">JavaScript</h2>
+            <img src="img/javascript.png" alt="javascript" class="img-skills" />
+          </div>
+          <div class="item-skills">
+            <h2 class="desc-skills">Java</h2>
+            <img src="img/java.png" alt="java" class="img-skills" />
+          </div>
+          <div class="item-skills">
+            <h2 class="desc-skills">Bootstrap</h2>
+            <img src="img/bootstrap.png" alt="bootstrap" class="img-skills" />
+          </div>
+          <div class="item-skills">
+            <h2 class="desc-skills">Excel</h2>
+            <img src="img/excel.png" alt="excel" class="img-skills" />
+          </div>
+        </div>
+      </div>
+      <div class="card-tools">
+        <div>
+          <h2 class="title">Tools</h2>
+        </div>
+        <div class="all-item-tools">
+          <div class="item-tools">
+            <h2 class="desc-tools-vsc">Visual Studio <br> Code</h2>
+            <img src="img/vsc.png" alt="visual-studio-code" class="img-tools" />
+          </div>
+          <div class="item-tools">
+            <h2 class="desc-tools">IntelliJ</h2>
+            <img src="img/intellij.png" alt="intellij" class="img-tools" />
+          </div>
+          <div class="item-tools">
+            <h2 class="desc-tools">Eclipse</h2>
+            <img src="img/eclipse.png" alt="eclipse" class="img-tools" />
+          </div>
+          <div class="item-tools">
+            <h2 class="desc-tools">Figma</h2>
+            <img src="img/figma.png" alt="figma" class="img-tools" />
+          </div>
+          <div class="item-tools">
+            <h2 class="desc-tools">Canva</h2>
+            <img src="img/canva.png" alt="canva" class="img-tools" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="card-contact">
+        <div>
+          <h2 class="title">Contact Me</h2>
+        </div>
+        <div class="all-item-contact">
+          <div class="item-contact">
+            <a href="mailto:agunghidayahputra@gmail.com" class="link-contact"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <div class="item-contact">
+            <a href="https://instagram.com/agunghidayah.putra" class="link-contact"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="item-contact">
+            <a href="https://github.com/AgungHidayahPutra" class="link-contact"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <div class="item-contact">
+            <a href="https://wa.me/+62895615256709" class="link-contact"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-up">
+      <input type="checkbox" class="check">
+      <div class="items btn-home">
+        <a href="#home" class="link-pop-up"><i class="fa-solid fa-house"></i></a>
+      </div>
+      <div class="items btn-contact">
+        <a href="#contact" class="link-pop-up"><i class="fa-solid fa-phone"></i></a>
+      </div>
+      <div class="items btn-skill">
+        <a href="#skills-tools" class="link-pop-up"><i class="fa-solid fa-computer"></i></a>
+      </div>
+      <div class="items btn-project">
+        <a href="#project-individu" class="link-pop-up"><i class="fa-solid fa-book"></i></i></a>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="profil.js"></script>
+  </body>
+</html>
